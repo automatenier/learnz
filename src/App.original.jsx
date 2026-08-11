@@ -199,7 +199,7 @@ export default function App() {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-900/40 border border-rose-700/50 text-rose-300 text-xs font-bold mb-6">
                 ❌ Cara Lama (Ketergantungan SaaS Cloud)
               </div>
-              <ul className="flex flex-col gap-4 text-slate-300 text-sm md:text-base">
+              <ul className="space-y-4 text-slate-300 text-sm md:text-base">
                 <li className="flex items-start gap-3">
                   <span className="text-rose-400 font-bold">✕</span>
                   <span><strong>Biaya Bulanan Membengkak:</strong> Bayar ChatGPT, Claude, Midjourney $20-$100+ per bulan tanpa batas.</span>
@@ -224,7 +224,7 @@ export default function App() {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/40 border border-emerald-500/50 text-emerald-300 text-xs font-bold mb-6">
                 ✅ Cara Baru: Learnz AI Native (Berdaulat)
               </div>
-              <ul className="flex flex-col gap-4 text-slate-200 text-sm md:text-base">
+              <ul className="space-y-4 text-slate-200 text-sm md:text-base">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                   <span><strong>100% Bebas Biaya Token:</strong> Jalankan model AI (Llama 3, DeepSeek, Qwen) di hardware lokal tanpa biaya API.</span>
@@ -291,7 +291,7 @@ export default function App() {
           {/* TAB CONTENT DISPLAY */}
           <div className="max-w-4xl mx-auto glass-panel p-8 md:p-10 border-slate-800">
             {activeTab === 0 && (
-              <div className="flex flex-col gap-6">
+              <div className="space-y-6">
                 <div className="flex items-center gap-3">
                   <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
                     <HardDrive className="w-6 h-6" />
@@ -323,7 +323,7 @@ export default function App() {
             )}
 
             {activeTab === 1 && (
-              <div className="flex flex-col gap-6">
+              <div className="space-y-6">
                 <div className="flex items-center gap-3">
                   <div className="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
                     <Cpu className="w-6 h-6" />
@@ -355,7 +355,7 @@ export default function App() {
             )}
 
             {activeTab === 2 && (
-              <div className="flex flex-col gap-6">
+              <div className="space-y-6">
                 <div className="flex items-center gap-3">
                   <div className="p-3 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400">
                     <Bot className="w-6 h-6" />
@@ -387,7 +387,7 @@ export default function App() {
             )}
 
             {activeTab === 3 && (
-              <div className="flex flex-col gap-6">
+              <div className="space-y-6">
                 <div className="flex items-center gap-3">
                   <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400">
                     <Server className="w-6 h-6" />
@@ -439,7 +439,7 @@ export default function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               {/* SLIDERS */}
-              <div className="flex flex-col gap-6">
+              <div className="space-y-6">
                 <div>
                   <div className="flex justify-between text-sm font-semibold mb-2">
                     <span className="text-slate-300">Biaya Langganan AI Cloud / User</span>
@@ -475,7 +475,7 @@ export default function App() {
               </div>
 
               {/* SAVINGS DISPLAY RESULT */}
-              <div className="p-6 rounded-2xl bg-[#090d16] border border-slate-800 text-center flex flex-col gap-4">
+              <div className="p-6 rounded-2xl bg-[#090d16] border border-slate-800 text-center space-y-4">
                 <div className="text-xs uppercase text-slate-400 tracking-wider font-semibold">
                   Estimasi Penghematan Tahunan
                 </div>
@@ -604,17 +604,17 @@ $ ./setup-linux-environment.sh
                 <div className="text-3xl font-extrabold text-white mb-6">
                   Rp 0 <span className="text-xs font-normal text-slate-400">/ selamanya</span>
                 </div>
-                <ul className="flex flex-col gap-3 text-sm text-slate-300 mb-8">
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-1" />
+                <ul className="space-y-3 text-sm text-slate-300 mb-8">
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-emerald-400" />
                     <span>E-Book: "7-Day Linux & Local AI Blueprint"</span>
                   </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-1" />
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-emerald-400" />
                     <span>Akses Komunitas Publik Telegram</span>
                   </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-1" />
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-emerald-400" />
                     <span>Template Docker Ollama Dasar</span>
                   </li>
                 </ul>
@@ -643,25 +643,25 @@ $ ./setup-linux-environment.sh
                 </div>
                 <p className="text-xs text-emerald-400 font-mono mb-6">Bisa dibatalkan kapan saja</p>
 
-                <ul className="flex flex-col gap-[14px] text-sm text-slate-200 mb-8">
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-1" />
+                <ul className="space-y-3.5 text-sm text-slate-200 mb-8">
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-emerald-400" />
                     <span><strong>Akses 4 Pilar Kurikulum AI Native</strong></span>
                   </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-1" />
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-emerald-400" />
                     <span><strong>Repository Docker Stack Vault Siap Pakai</strong></span>
                   </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-1" />
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-emerald-400" />
                     <span>Weekly Live Q&A & Build Session</span>
                   </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-1" />
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-emerald-400" />
                     <span>Telegram Agent Bot Setup Guide</span>
                   </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-1" />
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-emerald-400" />
                     <span><strong>Diskon 20% untuk Service Agentz DFY</strong></span>
                   </li>
                 </ul>
@@ -687,21 +687,21 @@ $ ./setup-linux-environment.sh
                 </div>
                 <p className="text-xs text-indigo-300 font-mono mb-6">Akses Seumur Hidup (Terbatas 50 Member)</p>
 
-                <ul className="flex flex-col gap-3 text-sm text-slate-300 mb-8">
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-indigo-400 shrink-0 mt-1" />
+                <ul className="space-y-3 text-sm text-slate-300 mb-8">
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-indigo-400" />
                     <span>Semua Benefit VIP Community Seumur Hidup</span>
                   </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-indigo-400 shrink-0 mt-1" />
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-indigo-400" />
                     <span>1-on-1 Consultation Setup Linux & Local AI (60 Mins)</span>
                   </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-indigo-400 shrink-0 mt-1" />
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-indigo-400" />
                     <span>Akses Semua Update Stack Masa Depan</span>
                   </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-indigo-400 shrink-0 mt-1" />
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-indigo-400" />
                     <span>Prioritas Bantuan Teknis Komunitas</span>
                   </li>
                 </ul>
@@ -789,7 +789,7 @@ $ ./setup-linux-environment.sh
             </button>
 
             {isSubmitted ? (
-              <div className="text-center py-8 flex flex-col gap-4">
+              <div className="text-center py-8 space-y-4">
                 <div className="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 mx-auto flex items-center justify-center">
                   <CheckCircle className="w-8 h-8" />
                 </div>
@@ -810,7 +810,7 @@ $ ./setup-linux-environment.sh
                   Masukkan email Anda untuk mengklaim e-book gratis dan mengamankan harga promosi awal membership VIP.
                 </p>
 
-                <form onSubmit={handleLeadSubmit} className="flex flex-col gap-4">
+                <form onSubmit={handleLeadSubmit} className="space-y-4">
                   <div>
                     <label className="block text-xs font-semibold text-slate-300 mb-1.5">
                       Alamat Email Anda
